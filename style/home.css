@@ -12,3 +12,75 @@ main{
     flex-direction: column;
     margin:0;
 }
+
+.item{
+    display:flex;
+    justify-content:space-around;
+    flex-direction: row;
+    padding-top:5%;
+    padding-bottom:5%;
+    padding-left:7%;
+    padding-right:7%;
+    gap:8rem;
+}
+
+.item-menu{
+    display:flex;
+    justify-content: space-between;
+    background-color: #7e77ca;
+    flex-direction: column;
+    border-radius:25px;
+    padding:5% 5%;
+    border:solid 3px  #5b52bc;
+}
+
+.item-menu-categories{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:1rem;
+}
+
+.item-menu-title{
+    background-color: #9a92f8;
+    border:solid 2px  #5b52bc;
+    border-radius:10px;
+    padding-left:1rem;
+    padding-right:1rem;
+    display: inline;
+    width: fit-content;
+}
+
+.item-menu-description{
+    background-color: #9a92f8;
+    border:solid 2px  #5b52bc;
+    border-radius:10px;
+    padding-left:1rem;
+    padding-right:1rem;
+    display: inline;
+    width: fit-content;
+}
+
+.item-menu-especs{
+    background-color: #9a92f8;
+    border:solid 2px  #5b52bc;
+    border-radius:10px;
+    padding-left:1rem;
+    padding-right:1rem;
+    display: inline;
+    width: fit-content;
+}
+
+.required{
+    gap:1rem;
+    display:flex;
+    flex-direction: column;
+}
+
+.required-item{
+    display:flex;
+    flex-direction:row;
+}
+
+
+
