@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="shortcut icon" href="">
+
+		<title>Título</title>
+		<meta name="description" content="descripción de la web, se recomienda 90 caracteres">
+		<meta name="keywords" 	 content="palabras clave, separadas, por comas">
+
+		<meta property="og:type"        content="website" />
+		<meta property="og:title"       content="Título" />
+		<meta property="og:description" content="descripción de la web, se recomienda 90 caracteres" />
+		<meta property="og:image"       content="https://www.youtube.com/s/desktop/12d6b690/img/favicon_144.png" />
+			
+		<link href="../style/home.css" rel="stylesheet">
+		<script type="module" src="../src/app.js"></script>
+	</head>
+	<body>
+        <header-component></header-component>
+        <main>
+            <div class="cart">
+                <div class="cart-details">
+                    <div class="cart-details-title">
+                        <h3>Tu carrito</h3>
+                    </div>
+                    <div class="cart-details-items">
+                        <div class="cart-details-item">
+                            <div class="item-image"></div>
+                            <div class="item-description">
+                                <div class="item-description-section">
+                                    <div class="item-description-title">
+                                        <h4>Nombre artículo</h4>
+                                    </div>
+                                    <div class="item-description-count">
+                                        <button class="button-count no-active" disabled>-</button>
+                                        <input type="text" readonly class="number-product" value="1">
+                                        <button class="button-count">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-description-price">
+                                    <h3>28.37€</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-details-item">
+                            <div class="item-image"></div>
+                            <div class="item-description">
+                                <div class="item-description-section">
+                                    <div class="item-description-title">
+                                        <h4>Nombre artículo</h4>
+                                    </div>
+                                    <div class="item-description-count">
+                                        <button class="button-count no-active" disabled>-</button>
+                                        <input type="text" readonly class="number-product" value="1">
+                                        <button class="button-count">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-description-price">
+                                    <h3>28.37€</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-price">
+                    <div class="cart-price-details">
+                        <div class="title">
+                            <h3>Precio total</h3>
+                        </div>
+                        <div class="total">
+                            <h3>50.00€</h3>
+                        </div>
+                    </div>
+                    <div class="cart-price-button">
+                        <button>Continuar pago</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer-component></footer-component>
+	</body>
+</html>

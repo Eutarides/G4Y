@@ -5,3 +5,4 @@ import './sales.js';
 import './footer.js';
 import './sales-row.js';
 import './sales-item.js';
+import './item.js';
