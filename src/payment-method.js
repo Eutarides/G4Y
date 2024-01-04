@@ -50,6 +50,10 @@ class PaymentMethod extends HTMLElement {
                 cursor:pointer;
             }
 
+            .payment-method-title h3{
+                color:white;
+            }
+
             .selection{
                 display: flex;
                 flex-direction: row;

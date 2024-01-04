@@ -49,6 +49,7 @@ class Checkout extends HTMLElement {
                 display:flex;
                 gap:1.5rem;
                 flex-direction: column;
+                border-radius:5px;
             }
 
             .payment-title{
@@ -78,6 +79,7 @@ class Checkout extends HTMLElement {
                 display:flex;
                 flex-direction: column;
                 padding:1% 2%;
+                border-radius:5px;
             }
 
             .receipt-area-details{
@@ -95,6 +97,7 @@ class Checkout extends HTMLElement {
                 justify-content: space-between;
                 align-items: center;
                 border:solid 1px #363070;
+                color:white;
             }
 
             .subtotal-price{
@@ -107,6 +110,7 @@ class Checkout extends HTMLElement {
 
             .subtotal-price h4{
                 margin:0.3rem 1rem;
+                color:black;
             }
 
             .receipt-area-items{
@@ -134,6 +138,10 @@ class Checkout extends HTMLElement {
                 justify-content: space-between;
                 width:95%;
                 align-items: center;
+            }
+
+            .total-price-title{
+                color:white;
             }
 
             .total-price-content{

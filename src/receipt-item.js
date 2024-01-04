@@ -43,6 +43,11 @@ class ReceiptItem extends HTMLElement {
 
             .receipt-item-title{
                 width:45%;
+                color:white;
+            }
+
+            .receipt-item-quantity{
+                color:white;
             }
 
             .receipt-item-price{
@@ -55,6 +60,7 @@ class ReceiptItem extends HTMLElement {
 
             .actual-price h4{
                 margin:0;
+                color:white;
             }
 
             .former-price h4{
@@ -66,7 +72,7 @@ class ReceiptItem extends HTMLElement {
 
         <div class="receipt-item">
             <div class="receipt-item-title">
-                <h4>Tollas Portuguesas "The Game"</h4>
+                <h4>Toallas Portuguesas "The Game"</h4>
             </div>
             <div class="receipt-item-quantity">
                 <h4>1</h4>

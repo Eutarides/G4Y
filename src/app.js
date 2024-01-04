@@ -12,5 +12,6 @@ import './payment-method.js';
 import './receipt-item.js';
 import './checkout.js';
 import './fonts.js';
+import './user-overlay.js';
 
 

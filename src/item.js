@@ -72,6 +72,7 @@ class Item extends HTMLElement {
                 padding-right:1rem;
                 display: inline;
                 width: fit-content;
+                color:white;
             }
 
             .item-menu-description{
@@ -82,6 +83,7 @@ class Item extends HTMLElement {
                 padding-right:1rem;
                 display: inline;
                 width: fit-content;
+                color:white;
             }
 
             .item-menu-especs{
@@ -92,6 +94,7 @@ class Item extends HTMLElement {
                 padding-right:1rem;
                 display: inline;
                 width: fit-content;
+                color:white;
             }
 
             .required{
