@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
+        
 
 		<title>Título</title>
 		<meta name="description" content="descripción de la web, se recomienda 90 caracteres">
@@ -19,10 +20,16 @@
 	<body>
         <header-component></header-component>
         <main>
-            <cart-component>
-                <cart-item-component slot="cart-item"></cart-item-component>
-                <cart-item-component slot="cart-item"></cart-item-component>
-            </cart-component>
+            <checkout-component>
+                <payment-method-component slot="payment-method"></payment-method-component>
+                <payment-method-component slot="payment-method"></payment-method-component>
+                <payment-method-component slot="payment-method"></payment-method-component>
+                <payment-method-component slot="payment-method"></payment-method-component>
+                <payment-method-component slot="payment-method"></payment-method-component>
+
+                <receipt-item-component slot="receipt-item"></receipt-item-component>
+                <receipt-item-component slot="receipt-item"></receipt-item-component>
+            </checkout-component>
         </main>
         <footer-component></footer-component>
 	</body>

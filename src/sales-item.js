@@ -18,13 +18,30 @@ class SalesItem extends HTMLElement {
         /*html*/
         `
         <style>
+
+            h2{
+                font-family: 'Lato', sans-serif;
+            }
+
+            h3{
+                font-family: 'Lato', sans-serif;
+            }
+
+            h4{
+                font-family: 'Lato', sans-serif;
+            }
+
+            h5{
+                font-family: 'Lato', sans-serif;
+            }
+
             .sales-item{
                 display:flex;
                 flex-direction: row;
                 gap:1rem;
                 background-color: #ff8675;
                 border-radius: 15px;
-                padding:1%;
+                padding:3%;
             }
 
             .sales-item:hover{

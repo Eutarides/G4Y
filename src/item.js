@@ -18,6 +18,24 @@ class Item extends HTMLElement {
         /*html*/
         `
         <style>
+
+
+            h2{
+                font-family: 'Lato', sans-serif;
+            }
+
+            h3{
+                font-family: 'Lato', sans-serif;
+            }
+
+            h4{
+                font-family: 'Lato', sans-serif;
+            }
+
+            h5{
+                font-family: 'Lato', sans-serif;
+            }
+
             .item{
                 display:flex;
                 justify-content:space-around;
@@ -32,11 +50,11 @@ class Item extends HTMLElement {
             .item-menu{
                 display:flex;
                 justify-content: space-between;
-                background-color: #bdb8f1;
+                background-color: #5b52bc;
                 flex-direction: column;
                 border-radius:5px;
                 padding:5% 5%;
-                border:solid 3px  #5b52bc;
+                border:solid 2px  #363070;
             }
 
             .item-menu-categories{
@@ -47,8 +65,8 @@ class Item extends HTMLElement {
             }
 
             .item-menu-title{
-                background-color: #f3aca3;
-                border:solid 2px  #5b52bc;
+                background-color: #7e77ca;
+                border:solid 2px  #363070;
                 border-radius:5px;
                 padding-left:1rem;
                 padding-right:1rem;
@@ -57,8 +75,8 @@ class Item extends HTMLElement {
             }
 
             .item-menu-description{
-                background-color: #f3aca3;
-                border:solid 2px  #5b52bc;
+                background-color: #7e77ca;
+                border:solid 2px  #363070;
                 border-radius:5px;
                 padding-left:1rem;
                 padding-right:1rem;
@@ -67,8 +85,8 @@ class Item extends HTMLElement {
             }
 
             .item-menu-especs{
-                background-color: #f3aca3;
-                border:solid 2px  #5b52bc;
+                background-color: #7e77ca;
+                border:solid 2px  #363070;
                 border-radius:5px;
                 padding-left:1rem;
                 padding-right:1rem;
@@ -89,6 +107,7 @@ class Item extends HTMLElement {
                 display:flex;
                 flex-direction:row;
                 gap:0.6rem;
+                font-family: 'Lato', sans-serif;
             }
 
             .required-title{

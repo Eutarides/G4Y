@@ -37,6 +37,7 @@ class Sales extends HTMLElement {
 
             .sales-title h2{
                 color:white;
+                font-family: 'Lato', sans-serif;
                 font-size:2rem;
             }
 
@@ -53,10 +54,7 @@ class Sales extends HTMLElement {
                 <h2>Ofertas</h2>
             </div>
             <div class="sales-items">
-                <slot name="sales-items-row">
-                </slot>
-                <slot name="sales-items-row">
-                </slot>               
+                <slot name="sales-items-row"></slot>               
             </div>
         </div>
 

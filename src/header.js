@@ -18,6 +18,23 @@ class Header extends HTMLElement {
         /*html*/
         `
         <style>
+
+            h2{
+                font-family: 'Lato', sans-serif;
+            }
+
+            h3{
+                font-family: 'Lato', sans-serif;
+            }
+
+            h4{
+                font-family: 'Lato', sans-serif;
+            }
+
+            h5{
+                font-family: 'Lato', sans-serif;
+            }
+            
             header{
                 height:100px;
                 display:flex;

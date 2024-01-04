@@ -18,6 +18,23 @@ class Footer extends HTMLElement {
         /*html*/
         `
         <style>
+
+            h2{
+                font-family: 'Lato', sans-serif;
+            }
+
+            h3{
+                font-family: 'Lato', sans-serif;
+            }
+
+            h4{
+                font-family: 'Lato', sans-serif;
+            }
+
+            h5{
+                font-family: 'Lato', sans-serif;
+            }
+
             footer{
                 display:flex;
                 flex-direction: column;
