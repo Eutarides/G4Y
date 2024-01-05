@@ -3,13 +3,10 @@ class Nav extends HTMLElement {
     constructor() {
         super();
         this.shadow = this.attachShadow({mode: 'open'});
-        this.render();
     }
 
     connectedCallback() {
-        document.addEventListener('hide-aside', (event => {
-            this.toggleAside();
-        }));
+        this.render();
     };
 
     render() {

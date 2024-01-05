@@ -3,13 +3,10 @@ class Header extends HTMLElement {
     constructor() {
         super();
         this.shadow = this.attachShadow({mode: 'open'});
-        this.render();
     }
 
     connectedCallback() {
-        document.addEventListener('hide-aside', (event => {
-            this.toggleAside();
-        }));
+        this.render();
     };
 
     render() {
@@ -54,11 +51,7 @@ class Header extends HTMLElement {
                 *{
                 box-sizing: border-box;
                 }
-                
-                
-                
-                
-                
+                    
                 .contenir{
                     width: 40%;
                     height: 40%;
@@ -66,10 +59,6 @@ class Header extends HTMLElement {
                     justify-content: center;
                     align-items: center;
                 }
-                
-                
-                
-                
                 
                 .search{
                     box-shadow:0px 0px 20px 1px #ffffff ;
@@ -83,21 +72,18 @@ class Header extends HTMLElement {
                     font-size: 25px;
                     font-weight: 1000;
                 }
+
                 .search::selection{
-                background-color: red;
-                color: white;
+                    background-color: red;
+                    color: white;
                 }
                 .search:focus{
-                border: 0;
-                outline: 0;
+                    border: 0;
+                    outline: 0;
                 }
                 .search:hover{
-                cursor: text;
+                    cursor: text;
                 }
-                
-                
-                
-                
                 
                 .search-btn{
                     transition: 0.2s ease-in-out;
