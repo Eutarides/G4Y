@@ -22,13 +22,17 @@ class UserOverlay extends HTMLElement {
 
             button{
                 width:100%;
-                height:50%;
-                background-color: rgb(119, 173, 193);
+                height:100%;
+                background-color:rgb(243, 133, 8);
                 color:white;
                 cursor: pointer;
                 border-radius:10px;
-                border:none;
+                border:solid 1px #b93827;
                 font-size:1.3rem;
+            }
+
+            h3{
+                margin:0.2rem;
             }
             
             p{
@@ -47,7 +51,7 @@ class UserOverlay extends HTMLElement {
             }
             .modal-overlay{
                 z-index:1003;
-                width:100.4vw;
+                width:100vw;
                 height:100vh;
                 position:absolute;
                 top:-1%;
@@ -60,7 +64,6 @@ class UserOverlay extends HTMLElement {
                 visibility: hidden;
                 transition:0.7s;
                 background-color: rgba(20, 3, 95, 0.493);
-            
             }
             
             .modal-overlay.active{
@@ -68,148 +71,141 @@ class UserOverlay extends HTMLElement {
                 opacity: 1;
             }
             
-            .filter-modal{
-                width:30%;
-                height:45%;
-                background-color:  hsl(180, 57%, 36%);
+            .user-modal{
+                width:40%;
+                height:60%;
+                background-color:  #f3a59b;
                 border-radius:10px;
                 display:flex;
                 justify-content: space-between;
                 flex-direction: column;
-                align-items: center;
+                padding:1% 5%;
                 opacity:1;
                 visibility: hidden;
                 transition:0.7s;
+                gap:1rem;
+                position:relative;
+                border:solid 3px #b93827;
             }
             
-            .filter-modal.active{
+            .user-modal.active{
                 opacity: 1;
                 visibility: visible;
-                transition:0.7s;
             }
-            
-            .announcement{
-                padding:5% 10% 0% 10%;
-                height:15%;
+
+            .user-area{
+                display:flex;
+                justify-content: space-between;
+                flex-direction: column;
+                gap:2rem;
+                padding:10% 0%;
+                padding-right:10%;
             }
-            
-            .announcement p{
-                font-size: 1.3rem;
-                font-weight: 600;
+
+            .user{
+                display:flex;
+                flex-direction:row;
+                gap:1rem;
+                background-color:#ff8675;
+                padding-left:2%;
+                border-radius:5px;
+                border:solid 1px #b93827;
                 color:white;
             }
-            
-            .filter-form{
-                height:35%;
-                width:90%;
-                display:flex;
-                justify-content:space-between;
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .filter-form.active{
-                width:90%;
-                height:50%;
-                display:flex;
-                justify-content:space-between;
-            }
-            
-            .input-title{
+
+            .user-data{
                 display:flex;
                 flex-direction:column;
-                gap:0.5rem;
-                width:90%;
+                gap:1rem;
             }
-            
-            .input-title p{
-                font-family: "Poppins", sans-serif;
-                font-size: 100%;
-                line-height: 1.15;
+
+            .user-data-item{
+                display:flex;
+                flex-direction:row;
+                gap:1rem;
+                padding-left:2%;
+                border-radius:5px;
+                border:solid 1px #b93827;
+                background-color:#ff8675;
                 color:white;
-                text-align:center;
-                font-weight:900;
-                margin:0;
             }
-            
-            .input-row{
-                display:flex;
+
+            .logout-button{
+                padding-bottom:5%;
+                height:3rem;
+                width:60%;
+                padding-left:20%;
             }
-            
-            .input-row input{
-                height:100%;
-            }
-            
-            .filter-modal-buttons{
-                display:flex;
-                flex-direction: row;
-                height:20%;
-                justify-content: space-between;
-                width:81%;
-                gap:2.6rem;
-            }
-            
-            .filter-button.cancel{
-                background-color: rgba(231, 118, 26, 0.904);
+
+            .close-button{
+                position:absolute;
+                top:1%;
+                right:1%;
+                width:50px;
+                fill:white;
             }
         </style>
 
         <div class="modal-overlay">
-            <div class="user">
-                <div class="user-title">
-                    <h3>Usuario:</h3>
+            <div class="user-modal">
+                <div class="user-area">
+                    <div class="user">
+                        <div class="user-title">
+                            <h3>Usuario:</h3>
+                        </div>
+                        <div class="user-name">
+                            <h3>NumencioMaster5357</h3>
+                        </div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-item">
+                            <div class="user-data-item-title">
+                                <h3>Email:</h3>
+                            </div>
+                            <div class="user-data-item-description">
+                                <h3>NumencioMaster5357@gmail.com</h3>
+                            </div>
+                        </div>
+                        <div class="user-data-item">
+                            <div class="user-data-item-title">
+                                <h3>País:</h3>
+                            </div>
+                            <div class="user-data-item-description">
+                                <h3>España</h3>
+                            </div>
+                        </div>
+                        <div class="user-data-item">
+                            <div class="user-data-item-title">
+                                <h3>Código Postal:</h3>
+                            </div>
+                            <div class="user-data-item-description">
+                                <h3>07021</h3>
+                            </div>
+                        </div>
+                        <div class="user-data-item">
+                            <div class="user-data-item-title">
+                                <h3>Ciudad:</h3>
+                            </div>
+                            <div class="user-data-item-description">
+                                <h3>Campica</h3>
+                            </div>
+                        </div>
+                        <div class="user-data-item">
+                            <div class="user-data-item-title">
+                                <h3>Dirección:</h3>
+                            </div>
+                            <div class="user-data-item-description">
+                                <h3>Carrer Campica 52 5ºA</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="user-name">
-                    <h3>NumencioMaster5357</h3>
+                <div class="logout-button">
+                    <button>Cerrar Sesión</button>
                 </div>
-            </div>
-            <div class="user-data">
-                <div class="user-data-item">
-                    <div class="user-data-item-title">
-                        <h3>Email:</h3>
-                    </div>
-                    <div class="user-data-item-description">ç
-                        <h3>NumencioMaster5357@gmail.com</h3>
-                    </div>
+                <div class="close-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>close</title><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg>
                 </div>
-                <div class="user-data-item">
-                    <div class="user-data-item-title">
-                        <h3>País:</h3>
-                    </div>
-                    <div class="user-data-item-description">ç
-                        <h3>España</h3>
-                    </div>
-                </div>
-                <div class="user-data-item">
-                    <div class="user-data-item-title">
-                        <h3>Código Postal:</h3>
-                    </div>
-                    <div class="user-data-item-description">ç
-                        <h3>07021</h3>
-                    </div>
-                </div>
-                <div class="user-data-item">
-                    <div class="user-data-item-title">
-                        <h3>ciudad:</h3>
-                    </div>
-                    <div class="user-data-item-description">ç
-                        <h3>Campica</h3>
-                    </div>
-                </div>
-                <div class="user-data-item">
-                    <div class="user-data-item-title">
-                        <h3>Dirección:</h3>
-                    </div>
-                    <div class="user-data-item-description">ç
-                        <h3>Carrer Campica 52 5ºA</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="logout-button">
-                <button>Cerrar Sesión</button>
-            </div>
-            <div class="close-button">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>close</title><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg>
             </div>
         </div>
 
